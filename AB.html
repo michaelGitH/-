@@ -1,0 +1,17 @@
+﻿<meta charset="utf-8">
+<script>
+
+var a = parseInt(prompt('Введите сумму вклада:'));
+
+var b = parseInt(prompt('Введите процентную ставку:'));
+
+var с = parseInt(prompt('Введите колличество лет:'));
+
+for ( var d = 0; d < b; d++ )
+{
+	a = ( a * ( 1 + ( b / 100 ) ) );
+	alert( 'Прошло лет: ' + ( d + 1 ) + ', На счету: ' + a );
+}
+
+
+</script>

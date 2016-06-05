@@ -1,0 +1,17 @@
+<meta charset = "utf-8">
+<script>
+	var number = parseInt(prompt("Загадайте число: "));
+	var answer;
+	while( number != answer ){
+		answer = parseInt(prompt("Какое число было загаданно: "));
+		if( number == answer ){
+			alert("Поздравляем, вы угадали!");
+		}
+		else if( answer < number ){
+			alert("Загаданное число больше!");
+		}
+		else {
+			alert("Загаданное число меньше!");
+		}
+	}
+</script>

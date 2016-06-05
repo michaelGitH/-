@@ -1,0 +1,16 @@
+<meta charset = "utf-8">
+<script>
+	var deposit = parseInt(prompt("Введите сумму вклада: "));
+	var persent = parseInt(prompt("Введите процентную ставку: "));
+	persent /= 100;
+	var years = parseInt(prompt("Введите срок вклада( лет ): "));
+	var sum = deposit;
+
+	for( var i = 0; i < years; i++ ){
+		sum = sum * ( 1 + persent );
+		alert("Срок вклада в годах: " + ( i + 1 ) + "; сумма вклада: " + sum );
+	}
+
+	alert("Сумма вклада равна " + sum + " рублей!" );
+	
+</script>
